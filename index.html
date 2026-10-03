@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us</title>
+  <!-- Optional: fills _lang from <html lang>, sets the Turnstile language, counts form views without cookies. -->
+  <script src="https://formgong.com/fg.js" async></script>
+  <style>
+    body { font: 16px/1.5 system-ui, sans-serif; margin: 0; padding: 48px 16px; background: #f7f7fb; color: #111; }
+    form { max-width: 480px; margin: 0 auto; display: grid; gap: 14px; background: #fff; padding: 28px; border-radius: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+    h1 { margin: 0 0 4px; font-size: 1.6rem; }
+    label { display: grid; gap: 6px; font-weight: 500; }
+    input, textarea { font: inherit; padding: 10px 12px; border: 1px solid #ccd; border-radius: 8px; }
+    textarea { min-height: 120px; }
+    button { font: inherit; font-weight: 600; padding: 12px; border: 0; border-radius: 8px; background: #4f46e5; color: #fff; cursor: pointer; }
+    .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+  </style>
+</head>
+<body>
+  <!-- Works without JavaScript: the browser POSTs to Formgong, which emails you and redirects back. -->
+  <form action="https://formgong.com/submit" method="POST">
+    <h1>Contact us</h1>
+    <!-- Public key from https://formgong.com/dashboard. Safe to ship in HTML. -->
+    <input type="hidden" name="access_key" value="fk_your_access_key">
+    <input type="hidden" name="_lang" value="en">
+    <!-- Optional: your own thank-you page (absolute https URL). Remove to use Formgong's page. -->
+    <input type="hidden" name="_redirect" value="https://example.com/thanks.html">
+    <input type="hidden" name="_subject" value="New message from the website">
+
+    <label>Name <input type="text" name="name" autocomplete="name" required></label>
+    <label>Email <input type="email" name="email" autocomplete="email" required></label>
+    <label>Message <textarea name="message" required></textarea></label>
+
+    <!-- Honeypot: bots fill it, people never see it. Keep it empty. -->
+    <div class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="botcheck" tabindex="-1" autocomplete="off"></label></div>
+
+    <!-- Optional Cloudflare Turnstile: uncomment and paste your site key (also enable Turnstile in the form settings).
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <div class="cf-turnstile" data-sitekey="YOUR_SITE_KEY"></div>
+    -->
+
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
