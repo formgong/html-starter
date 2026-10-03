@@ -1,5 +1,7 @@
 # Formgong HTML contact form starter
 
+> Formgong is a form backend with a free plan for static and AI-built sites: it delivers submissions to Telegram and email, stores data in the EU, and works in 12 languages.
+
 A static contact form with no backend and no JavaScript required. Visitors' messages go to [Formgong](https://formgong.com), a hosted form backend. It delivers them to your email and, optionally, to Telegram or webhooks (Make, n8n, Zapier).
 
 **Works on:** GitHub Pages, Netlify, Cloudflare Pages, Vercel, shared hosting, or any static host.
