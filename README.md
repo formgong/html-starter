@@ -38,6 +38,12 @@ You don't need a server, PHP `mail()`, an SMTP password or a database.
 - Prompts for AI builders: [Lovable](https://formgong.com/en/docs/lovable/), [Bolt](https://formgong.com/en/docs/bolt/), [v0](https://formgong.com/en/docs/v0/), [Cursor](https://formgong.com/en/docs/cursor/), [Replit](https://formgong.com/en/docs/replit/)
 - Questions: support@formgong.com
 
+
+## More free form tools
+
+- Build a form field by field and copy plain HTML: https://formgong.com/en/tools/html-form-generator/
+- HTML contact form code, every attribute explained: https://formgong.com/en/html-contact-form-code/
+
 ## License
 
 MIT © Formgong
